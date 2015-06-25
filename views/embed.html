@@ -1,0 +1,9 @@
+<video id="example_video_1" class="video-js vjs-default-skin vjs-big-play-centered"
+	controls preload="auto" width="{{width}}" height="{{height}}"
+	poster="{{poster}}"
+	data-setup='{}'>
+		{% if mp4 %}<source src="{{mp4}}" type='video/mp4' />{% end %} 
+		{% if webm != '' %}<source src="{{webm}}" type='video/webm' />{% end %} 
+		{% if ogg != '' %}<source src="{{ogg}}" type='video/ogg' />{% end %} 
+		<span class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></span>
+</video>
